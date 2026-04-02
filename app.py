@@ -1,5 +1,6 @@
 from flask import Flask, request, jsonify
 import pickle
+import os
 from utils.ocr import extract_text
 from utils.preprocess import clean_text
 from utils.rules import rule_check
@@ -10,35 +11,50 @@ app = Flask(__name__)
 model = pickle.load(open("model/model.pkl", "rb"))
 vectorizer = pickle.load(open("model/vectorizer.pkl", "rb"))
 
+@app.route("/")
+def home():
+    return "API is running"
+
 @app.route("/predict", methods=["POST"])
 def predict():
-    file = request.files["file"]
-    file_path = "temp.pdf"
-    file.save(file_path)
+    try:
+        if "file" not in request.files:
+            return jsonify({"error": "No file uploaded"}), 400
 
-    # Step 1: OCR
-    text = extract_text(file_path)
+        file = request.files["file"]
+        file_path = "temp.pdf"
+        file.save(file_path)
 
-    if len(text.strip()) < 30:
-        return jsonify({"result": "Low readable content (possibly handwritten)"})
+        # Step 1: OCR
+        text = extract_text(file_path)
 
-    # Step 2: Clean
-    text = clean_text(text)
+        if len(text.strip()) < 30:
+            os.remove(file_path)
+            return jsonify({"result": "Low readable content (possibly handwritten)"})
 
-    # Step 3: Rule
-    rule = rule_check(text)
+        # Step 2: Clean
+        text = clean_text(text)
 
-    # Step 4: ML
-    vec = vectorizer.transform([text])
-    ml = model.predict(vec)[0]
+        # Step 3: Rule
+        rule = rule_check(text)
 
-    # Final decision
-    if rule or ml == 1:
-        result = "Valid Study Material"
-    else:
-        result = "Invalid Document"
+        # Step 4: ML
+        vec = vectorizer.transform([text])
+        ml = model.predict(vec)[0]
 
-    return jsonify({"result": result})
+        # Final decision
+        if rule or ml == 1:
+            result = "Valid Study Material"
+        else:
+            result = "Invalid Document"
+
+        os.remove(file_path)
+
+        return jsonify({"result": result})
+
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)

@@ -2,6 +2,5 @@ __pycache__/
 *.pyc
 .env
 temp.pdf
-test.pdf
-test2.pdf
-test.py
+
+/temp
