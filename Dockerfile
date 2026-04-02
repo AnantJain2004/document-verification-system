@@ -9,13 +9,16 @@ RUN apt-get update && apt-get install -y \
 # Set working directory
 WORKDIR /app
 
-# Copy all files
-COPY . .
+# Copy only requirements first (for caching)
+COPY requirements.txt .
 
-# Install Python packages
+# Install Python dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Expose Flask port
+# Copy rest of the project
+COPY . .
+
+# Expose port
 EXPOSE 5000
 
 # Run the app
