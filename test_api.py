@@ -1,8 +1,8 @@
 import requests
 
-url = "http://127.0.0.1:5000/predict"
+url = "https://doc-verifier.onrender.com/predict"
 
-files = {"file": open("temp/test2.pdf", "rb")}
+files = {"file": open("test.pdf", "rb")}
 
 response = requests.post(url, files=files)
 

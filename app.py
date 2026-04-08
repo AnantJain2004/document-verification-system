@@ -13,13 +13,13 @@ vectorizer = pickle.load(open("model/vectorizer.pkl", "rb"))
 
 @app.route("/")
 def home():
-    return "API is running"
+    return "Document Verification API is running"
 
 @app.route("/predict", methods=["POST"])
 def predict():
     try:
         if "file" not in request.files:
-            return jsonify({"error": "No file uploaded"}), 400
+            return jsonify(False), 400
 
         file = request.files["file"]
         file_path = "temp.pdf"
@@ -30,7 +30,8 @@ def predict():
 
         if len(text.strip()) < 30:
             os.remove(file_path)
-            return jsonify({"result": "Low readable content (possibly handwritten)"})
+            print("Low readable content")
+            return jsonify(False)
 
         # Step 2: Clean
         text = clean_text(text)
@@ -44,16 +45,17 @@ def predict():
 
         # Final decision
         if rule or ml == 1:
-            result = "Valid Study Material"
+            return jsonify(True)
         else:
-            result = "Invalid Document"
-
-        os.remove(file_path)
-
-        return jsonify({"result": result})
+            return jsonify(False)
 
     except Exception as e:
-        return jsonify({"error": str(e)}), 500
+        print("Error:", str(e))
+        return jsonify(False)
+    
+    finally:
+        if os.path.exists(file_path):
+            os.remove(file_path)
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
