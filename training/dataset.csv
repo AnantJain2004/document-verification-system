@@ -24,7 +24,250 @@ text,label
 "Explain computer networks and its components",1
 "Define algorithm and explain its characteristics",1
 "Explain hashing techniques in data structures",1
+"Explain the concept of normalization in DBMS with suitable examples",1
+"Define operating system and explain its functions",1
+"What is machine learning? Discuss supervised and unsupervised learning",1
+"Explain inheritance in object oriented programming",1
+"Describe the layers of OSI model in detail",1
+"Write a program to implement binary search in C",1
+"Explain recursion with factorial example",1
+"Define data mining and explain its techniques",1
+"What is cloud computing? Explain SaaS, PaaS and IaaS",1
+"Discuss advantages and disadvantages of linked list",1
+"Explain process scheduling algorithms in operating system",1
+"What is software engineering? Explain waterfall model",1
+"Define compiler and explain lexical analysis",1
+"Explain deadlock and methods for deadlock prevention",1
+"What is artificial intelligence? Explain its applications",1
+"Describe primary key and foreign key with example",1
+"Explain TCP/IP model and its layers",1
+"Discuss different types of joins in SQL",1
+"Define stack and explain push and pop operations",1
+"Explain queue data structure with example",1
+"What is hashing? Explain collision resolution techniques",1
+"Write short notes on cyber security",1
+"Explain binary tree traversal techniques",1
+"Describe advantages of object oriented programming",1
+"What is linear regression? Explain assumptions",1
+"Explain software development life cycle",1
+"Discuss memory management techniques in OS",1
+"Explain paging and segmentation",1
+"What is data structure? Explain its types",1
+"Describe the concept of virtualization",1
+"Explain greedy algorithm with example",1
+"Discuss Dijkstra shortest path algorithm",1
+"Explain bubble sort algorithm with example",1
+"Compare quick sort and merge sort",1
+"What is database management system?",1
+"Explain ER diagram with suitable example",1
+"Define algorithm and explain characteristics of algorithm",1
+"Explain finite automata in theory of computation",1
+"Discuss normalization forms in DBMS",1
+"What is internet of things? Explain applications",1
+"Write notes on big data analytics",1
+"Explain supervised learning algorithms",1
+"Define computer network and explain topologies",1
+"Discuss advantages of cloud storage",1
+"Explain constructors and destructors in C++",1
+"Write a program for matrix multiplication",1
+"Explain function overloading with example",1
+"Discuss polymorphism in Java",1
+"Explain encapsulation and abstraction",1
+"Describe software testing techniques",1
+"What is unit testing? Explain with example",1
+"Explain agile development methodology",1
+"Discuss importance of database indexing",1
+"Define HTML and explain basic tags",1
+"Explain CSS selectors with examples",1
+"Write notes on JavaScript events",1
+"Explain REST API architecture",1
+"What is operating system kernel?",1
+"Discuss features of Linux operating system",1
+"Explain normalization with practical examples",1
+"Describe types of inheritance in C++",1
+"Explain stack implementation using arrays",1
+"What is recursion? Explain tower of Hanoi problem",1
+"Explain DFS and BFS traversal algorithms",1
+"Discuss applications of artificial neural networks",1
+"What is deep learning? Explain CNN",1
+"Describe relational database model",1
+"Explain SQL aggregate functions",1
+"Write notes on NoSQL databases",1
+"What is software requirement specification?",1
+"Explain use case diagram in UML",1
+"Discuss black box and white box testing",1
+"Explain binary search tree insertion",1
+"Describe AVL tree rotations",1
+"Explain CPU scheduling criteria",1
+"Discuss round robin scheduling algorithm",1
+"What is semaphore? Explain critical section problem",1
+"Explain process synchronization",1
+"Describe RAID levels in storage systems",1
+"Explain cache memory and virtual memory",1
+"Write notes on ethical hacking",1
+"Explain digital signatures in cryptography",1
+"What is blockchain technology?",1
+"Discuss applications of data science",1
+"Explain K nearest neighbor algorithm",1
+"Describe decision tree classification",1
+"What is regression analysis?",1
+"Explain hypothesis testing in statistics",1
+"Discuss sampling methods in research",1
+"Explain pointers in C programming",1
+"Write a program to reverse a linked list",1
+"Explain exception handling in Java",1
+"Discuss multithreading in operating systems",1
+"Describe client server architecture",1
+"What is compiler optimization?",1
+"Explain syntax analysis in compiler design",1
+"Discuss phases of compiler",1
+"Explain regular expressions in automata",1
+"Write notes on e commerce systems",1
+"Describe data warehouse architecture",1
+"What is OLAP? Explain its operations",1
+"Explain distributed database systems",1
+"Discuss mobile computing concepts",1
+"Write short notes on wireless sensor networks",1
+"Explain software metrics in project management",1
+"Discuss risk management in software engineering",1
+"What is feasibility study in software projects?",1
+"Describe normalization and denormalization",1
+"Explain SQL constraints with examples",1
+"Write notes on machine learning applications in healthcare",1
+"Discuss artificial intelligence in education",1
+"Explain graph data structure with example",1
+"Describe Kruskal minimum spanning tree algorithm",1
+"Explain dynamic programming approach",1
+"Discuss divide and conquer strategy",1
 
+"Buy one get one free on all shoes today",0
+"Watch latest action movies online for free",0
+"Recipe for homemade chocolate brownies",0
+"Top tourist destinations in Europe",0
+"Football world cup match highlights",0
+"Download latest songs mp3 collection",0
+"Best skincare products for glowing skin",0
+"Fitness workout plan for weight loss",0
+"Daily horoscope and astrology predictions",0
+"Latest smartphone launches and reviews",0
+"Online shopping offers during festival sale",0
+"Funny memes and jokes collection",0
+"How to grow indoor plants at home",0
+"Travel guide for visiting Goa beaches",0
+"Tips for healthy eating and lifestyle",0
+"Best restaurants near downtown area",0
+"Movie review of latest thriller film",0
+"Cricket player statistics and rankings",0
+"Fashion trends for summer season",0
+"How to decorate your living room",0
+"Download cracked games for PC",0
+"Watch live cricket streaming online",0
+"Top romantic songs playlist",0
+"Gaming tricks and cheats for beginners",0
+"Easy pasta recipe with cheese sauce",0
+"Motivational quotes for success",0
+"Breaking news on stock market today",0
+"Photography tips for beginners",0
+"Yoga exercises for stress relief",0
+"Latest celebrity gossip and updates",0
+"Best cars under budget in 2026",0
+"How to lose belly fat naturally",0
+"Travel vlog exploring mountain villages",0
+"Free giveaway click here to win prizes",0
+"Best makeup tutorials on internet",0
+"New fashion collection available now",0
+"Download HD wallpapers for mobile",0
+"Top 10 anime series to watch",0
+"Cooking chicken curry step by step",0
+"How to train your pet dog",0
+"Latest IPL scores and commentary",0
+"Luxury hotels review and booking guide",0
+"Social media captions for Instagram posts",0
+"Benefits of meditation in daily life",0
+"How to earn money from blogging",0
+"Online casino games and betting tips",0
+"Latest music album release news",0
+"Home workout without gym equipment",0
+"Trending reels and viral videos",0
+"Tips to improve photography lighting",0
+"Gardening tools and equipment offers",0
+"How to prepare cold coffee at home",0
+"Celebrity interview and movie promotion",0
+"Car racing championship highlights",0
+"Top hiking trails for adventure lovers",0
+"Easy cake recipe for birthdays",0
+"Online dating tips and relationship advice",0
+"Watch comedy videos and standup clips",0
+"Mobile phone accessories discount sale",0
+"Pet care tips for cat owners",0
+"How to make pizza at home",0
+"Top fashion influencers on social media",0
+"Daily weather forecast and alerts",0
+"Investing tips for cryptocurrency traders",0
+"Latest football transfer rumors",0
+"Music concert tickets booking online",0
+"Best perfumes for men and women",0
+"Random chat conversation between friends",0
+"Download free ringtone collection",0
+"Movie dialogue and screenplay scenes",0
+"Top beach destinations for vacation",0
+"Hair care routine for healthy hair",0
+"Shopping mall discounts this weekend",0
+"Viral TikTok dance challenge videos",0
+"Funny cat videos compilation",0
+"Healthy smoothie recipes for breakfast",0
+"Bike modification ideas and accessories",0
+"Top web series streaming now",0
+"Luxury watches buying guide",0
+"Gaming laptop deals and offers",0
+"Celebrity wedding photos gallery",0
+"Camping essentials checklist for travelers",0
+"How to style denim jackets",0
+"New year party ideas and decoration",0
+"Live music festival updates",0
+"Street food vlog and reviews",0
+"Tips for growing beard faster",0
+"Online sale on furniture products",0
+"Travel photography inspiration gallery",0
+"Funny prank videos compilation",0
+"Best coffee shops in the city",0
+"Adventure bike ride experience story",0
+"Simple salad recipes for dinner",0
+"Online multiplayer gaming community",0
+"Latest entertainment industry updates",0
+"Top luxury resorts in Maldives",0
+"Home cleaning hacks and tricks",0
+"How to organize wardrobe efficiently",0
+"Best Netflix series recommendations",0
+"Music lyrics and guitar chords",0
+"Celebrity fashion red carpet looks",0
+"Discount coupons for online shopping",0
+"Daily sports news and updates",0
+"Easy DIY craft ideas for kids",0
+"Trending hashtags for Instagram growth",0
+"Review of newly launched SUV car",0
+"Tips for solo travel experience",0
+"Random meaningless text without context",0
+"Online food delivery app discounts",0
+"Top comedy movies of all time",0
+"Guide to buying gaming accessories",0
+"How to make homemade ice cream",0
+"Festival celebration photos and stories",0
+"Workout motivation playlist songs",0
+"Best destinations for honeymoon trips",0
+"Free movie download website links",0
+"Latest celebrity social media posts",0
+"Travel packing checklist for vacations",0
+"Interior design ideas for apartments",0
+"Top mobile games to play now",0
+"Easy breakfast sandwich recipe",0
+"Watch trending reels and shorts",0
+"Beauty tips for glowing skin naturally",0
+"Sports bike racing event highlights",0
+"Funny office jokes and memes",0
+"Fashion sale up to seventy percent off",0
+"Online shopping cashback offers available",0
+"Simple random sentence with no meaning",0
 "Buy cheap products online at discount click here",0
 "Watch latest movies free download HD print",0
 "This is a random conversation between two people",0
